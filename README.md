@@ -13,7 +13,7 @@ To begin using the script just run the following command to download the file
 wget https://raw.githubusercontent.com/MegaLime0/Very-Simple-Prompt/main/src/very_simple_prompt.sh
 ```
 
-After you have the file put it anywhere you'd like, i recommend storing it in the `$HOME/.config/` Folder
+After you have the file, put it anywhere you'd like, i recommend storing it in the `$HOME/.config/` Folder
 ```bash
 mv very_simple_prompt.sh $HOME/.config/
 ```
