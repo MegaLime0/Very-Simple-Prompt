@@ -10,7 +10,7 @@ fp_subject="\t"
 sp_background=43
 sp_foreground=54
 sp_subject="\u@\H"
-## THIRS PART
+## THIRD PART
 tp_background=8
 tp_foreground=15
 tp_subject="\W"
