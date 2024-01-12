@@ -85,4 +85,8 @@ here are a couple for example
 ```
 
 As for the transition, ive made the script in such a way that it doesnt work, so dont try changing it.
-Ill eventually come around and fix it but its broken for now
+
+# End
+
+Thats all there is to this script. It's kinda buggy but works well enough for me, And it might save someone
+a headache
