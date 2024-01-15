@@ -10,7 +10,7 @@ fp_subject="\t"
 sp_background=43
 sp_foreground=54
 sp_subject="\u@\H"
-## THIRD PART
+## THIRS PART
 tp_background=8
 tp_foreground=15
 tp_subject="\W"
@@ -28,8 +28,8 @@ swclr() {
     local trans="$4"
     local subj="$5"
 
-    local result="${prevbg}${bg}${trans}${fg} ${subj} "
-    echo "$result"
+    local result=" ${prevbg}${bg}${trans}${fg} ${subj}"
+    echo -e "$result"
 }
 
 reset="\[\e[0m\]"
@@ -45,11 +45,11 @@ defaultfg="\[\e[39m\]"
 defaultbg="\[\e[49m\]"
 
 first_part="\[${bgt}${fp_background}m\]\[${fgt}${fp_foreground}m\] ${fp_subject} "
-second_part=$(swclr ${sp_background} ${sp_foreground} ${fp_background} ${transition} ${sp_subject})
-third_part=$(swclr ${tp_background} ${tp_foreground} ${sp_background} ${transition} ${tp_subject})
-fourth_part=$(swclr ${fo_background} ${fo_foreground} ${tp_background} ${transition} ${fo_subject})
+second_part="$(swclr ${sp_background} ${sp_foreground} ${fp_background} ${transition} ${sp_subject})"
+third_part="$(swclr ${tp_background} ${tp_foreground} ${sp_background} ${transition} ${tp_subject})"
+fourth_part="$(swclr ${fo_background} ${fo_foreground} ${tp_background} ${transition} ${fo_subject})"
 outro="${defaultbg}\[${fgt}${fo_background}m\]${transition}${reset}"
 
-export PS1="${first_part}${second_part}${third_part}${fourth_part}${backspace}${outro} "
+export PS1="${first_part}${second_part}${third_part}${fourth_part} ${outro} "
 
 unset -f swclr
