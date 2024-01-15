@@ -58,6 +58,15 @@ fo_subject="\$"
 ```
 The color values should be between 0 and 256, for reference see this [wikipedia](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) page
 
+The transition can be any character or string. here are the 3 most used characters for transitions
+```bash
+# if you're looking at this in your browser, you'll probably only see a square with weird symbols
+
+
+
+```
+
+
 The subject can be anything from a simple string, to bash escape sequences.
 here are a couple for example
 
